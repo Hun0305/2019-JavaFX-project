@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="500.0" styleClass="VBox" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.javaFX.project.ViewController">
+   <children>
+      <ScrollPane layoutX="14.0" layoutY="109.0" prefHeight="196.0" prefWidth="212.0" styleClass="VBox" stylesheets="@style.css">
+         <content>
+            <VBox fx:id="VBox_Word" prefHeight="199.0" prefWidth="212.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="btn_Today" layoutX="1.0" mnemonicParsing="false" onAction="#handleTodayAction" prefHeight="65.0" prefWidth="158.0" text="오늘의 단어">
+         <font>
+            <Font name="Gulim" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_View" layoutX="160.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="206.0" text="단어 전체 보기">
+         <font>
+            <Font name="Gulim" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Setting" layoutX="367.0" mnemonicParsing="false" onAction="#handleSettingAction" prefHeight="66.0" prefWidth="134.0" text="설정">
+         <font>
+            <Font name="Gulim" size="22.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutX="239.0" layoutY="109.0" prefHeight="196.0" prefWidth="256.0" styleClass="VBox" stylesheets="@style.css">
+         <content>
+            <VBox fx:id="VBox_Sentence" prefHeight="195.0" prefWidth="249.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="25.0" layoutY="354.0" prefHeight="151.0" prefWidth="451.0">
+         <content>
+            <VBox fx:id="VBox_Meaning" prefHeight="151.0" prefWidth="448.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="lbl_Word" layoutX="98.0" layoutY="75.0" text="단어" />
+      <Label fx:id="lbl_Meaning" layoutX="239.0" layoutY="317.0" text="뜻" />
+      <Label fx:id="lbl_Sentence" layoutX="345.0" layoutY="75.0" text="예문" />
+   </children>
+</AnchorPane>

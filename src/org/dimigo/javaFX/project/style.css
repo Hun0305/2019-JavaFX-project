@@ -1,0 +1,20 @@
+.comboBox {
+    -fx-font-size: 10px;
+    -fx-font-family: "NanumBarunGothic YetHangul";
+
+}
+
+.VBox {
+    -fx-font-size: 16px;
+    -fx-font-family: "NanumBarunGothic YetHangul";
+}
+
+.button {
+    -fx-font-size: 24px;
+    -fx-font-family: "NanumBarunGothic YetHangul";
+}
+
+.label {
+    -fx-font-size: 22px;
+    -fx-font-family: "NanumBarunGothic YetHangul";
+}
